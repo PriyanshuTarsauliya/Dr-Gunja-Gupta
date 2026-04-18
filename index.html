@@ -604,22 +604,22 @@ footer::before { content:''; position:absolute; top:0; left:0; width:100%; heigh
 }
 .theme-toggle:hover { color: var(--teal); }
 
-/* WhatsApp Float */
-.whatsapp-float {
+/* Call Float */
+.call-float {
   position: fixed; bottom: 105px; right: 40px; width: 60px; height: 60px; border-radius: 50%;
-  background: #25D366; color: #fff; text-decoration: none; font-size: 32px;
-  display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
-  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1); z-index: 999; animation: pulse-green 2s infinite;
+  background: var(--teal); color: #fff; text-decoration: none; font-size: 28px;
+  display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 25px rgba(13, 148, 136, 0.4);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1); z-index: 999; animation: pulse-teal 2s infinite;
 }
-.whatsapp-float:hover { animation-play-state: paused; background: #1ebe57; transform: translateY(-5px); box-shadow: 0 15px 30px rgba(37, 211, 102, 0.5); color: #fff; }
-@keyframes pulse-green {
-  0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
-  70% { transform: scale(1.05); box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
-  100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+.call-float:hover { animation-play-state: paused; background: var(--teal-dark); transform: translateY(-5px); box-shadow: 0 15px 30px rgba(13, 148, 136, 0.5); color: #fff; }
+@keyframes pulse-teal {
+  0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(13, 148, 136, 0.7); }
+  70% { transform: scale(1.05); box-shadow: 0 0 0 15px rgba(13, 148, 136, 0); }
+  100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(13, 148, 136, 0); }
 }
 
 @media(max-width: 600px) {
-  .whatsapp-float { bottom: 75px; right: 20px; width: 50px; height: 50px; font-size: 26px; }
+  .call-float { bottom: 75px; right: 20px; width: 50px; height: 50px; font-size: 22px; }
 }
 
 </style>
@@ -670,7 +670,7 @@ footer::before { content:''; position:absolute; top:0; left:0; width:100%; heigh
     <p>Gentle, effective homeopathic treatment combined with professional counselling. From women's health to skin care, children's issues to mental wellness — we treat the root cause, not just symptoms.</p>
     <div class="hero-btns">
       <a href="https://docs.google.com/forms/d/e/1FAIpQLSfDlkHJ573P2R8agTTDENzV2GMohqN7wtrrdLR7iaumiit_CA/viewform" target="_blank" rel="noopener noreferrer" class="btn-primary" id="heroBookBtn"><i class="fas fa-calendar-check"></i> Book Appointment</a>
-      <a href="https://wa.me/917601839607" target="_blank" rel="noopener noreferrer" class="btn-outline" style="border-color:#25D366; color:#25D366; background: rgba(37,211,102,0.1);"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
+      <a href="tel:+917601839607" class="btn-outline" style="border-color:var(--teal); color:var(--teal); background: rgba(13,148,136,0.1);"><i class="fas fa-phone-alt"></i> Call Clinic</a>
       <a href="#services" class="btn-outline" id="heroServicesBtn"><i class="fas fa-hand-holding-medical"></i> Our Services</a>
     </div>
   </div>
@@ -1057,9 +1057,9 @@ footer::before { content:''; position:absolute; top:0; left:0; width:100%; heigh
   </div>
 </footer>
 
-<!-- WHATSAPP CTA -->
-<a href="https://wa.me/917601839607" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Chat on WhatsApp">
-  <i class="fab fa-whatsapp"></i>
+<!-- CALL CTA -->
+<a href="tel:+917601839607" class="call-float" aria-label="Call Clinic">
+  <i class="fas fa-phone-alt"></i>
 </a>
 
 <!-- BACK TO TOP -->
