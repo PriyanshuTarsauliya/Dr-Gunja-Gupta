@@ -560,6 +560,21 @@ section { padding: 100px 5%; position: relative; }
   padding: 4px 12px; border-radius: 16px; z-index: 2;
   box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
+.ba-card::after {
+  content: 'Dr. Gunja Gupta';
+  position: absolute; bottom: 12px; right: 12px;
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(4px);
+  color: rgba(255, 255, 255, 0.95);
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  pointer-events: none;
+  z-index: 2;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
 
 /* -- staggered card reveal -- */
 .pf-card, .pf-featured, .pf-video-card, .ba-card {
